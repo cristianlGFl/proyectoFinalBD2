@@ -1,0 +1,39 @@
+<table class="table table-bordered table-hover table-light ">
+    <thead>
+<tr class="table-dark">
+  <th>Propietario</th>
+<th>Pais</th>
+<th>Placa</th>
+<th>Modelo</th>
+<th>Marca</th>
+<th>Color</th>
+<th>Valor</th>
+<th>Acciones</th>
+
+</tr>
+
+    </thead>
+    <tbody>
+  {{#each tasks}}
+    <tr>
+      <td>{{propietario}}</td>
+    <td>{{pais}}</td>
+    <td>{{placa}}</td>
+    <td>{{modelo}}</td>
+    <td>{{marca}}</td>
+    <td>{{color}}</td>
+    <td>{{valor}}</td>
+     <td>
+    {{#if done}}
+   <a href="/done/{{_id}}" class="btn btn-info">Vender</a>
+    {{else}}
+    <a href="/done/{{_id}}" class="btn btn-success">Comprar</a>
+  {{/if}}
+  
+    <a href="/edit/{{_id}}" class="btn btn-warning">Editar</a>
+    <a href="/delete/{{_id}} " class="btn btn-danger">Eliminar</a>
+    </tr>
+    </td>
+  {{/each}}
+  </tbody>
+</table>

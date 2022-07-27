@@ -1,0 +1,46 @@
+
+<div class="card card-body p-4 rounded-0 bg-dark text-white rounded">
+  <form action="/edit/{{task._id}}" method="POST">
+  <h3>Editar Auto</h3>
+  <br>
+  <div>
+    <label for="propietario">Nombre Propietario:</label>
+    <input name="propietario" id="propietario"  class="form-control rounded-0 bg-dark text-white" value="{{task.propietario}}"></input>
+  </div>
+  <div>
+    <label for="pais">País:</label>
+    <input name="pais" id="pais"  class="form-control rounded-0 bg-dark text-white" value="{{task.pais}}"></input>
+  </div>
+  
+  <div>
+    <label for="placa">Placa:</label>
+    <input name="placa" id="placa"  class="form-control rounded-0 bg-info text-white"  value="{{task.placa}}" disabled ></input>
+  </div>
+  <div>
+    <label for="marca">Marca:</label>
+    <input name="marca" id="marca" class="form-control rounded-0 bg-dark text-white" value="{{task.marca}}"></input>
+  </div>
+  <div>
+    <label for="modelo">Modelo:</label>
+    <input name="modelo" id="modelo" class="form-control rounded-0 bg-dark text-white"  value="{{task.modelo}}"></input>
+  </div>
+  <div>
+    <label for="color">Color:</label>
+    <input name="color" id="color" class="form-control rounded-0 bg-dark text-white" value="{{task.color}}" ></input>
+  </div>
+  <div>
+    <label for="valor">Valor:</label>
+    <input type="number" name="valor" id="valor" class="form-control rounded-0 bg-dark text-white" value="{{task.valor}}" ></input>
+  </div>
+    <input type="hidden" name="comprar" id="comprar" value="false"></input>
+    <br>
+    |<button class="btn btn-primary btn-sm mt-2">Editar</button>
+  </div>
+  
+
+ 
+ 
+
+</form>
+
+</div>

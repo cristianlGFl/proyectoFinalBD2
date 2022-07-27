@@ -1,0 +1,24 @@
+<table class="table table-bordered table-hover table-light ">
+    <thead>
+<tr class="table-dark">
+<th>Nombre del evento</th>
+<th>Fecha</th>
+<th>Placa</th>
+<th>Acciones</th>
+</tr>
+
+    </thead>
+    <tbody>
+  {{#each events}}
+    <tr>
+    <td>{{nombreEvento}}</td>
+    <td>{{fecha}}</td>
+    <td>{{placa}}</td>
+     <td>
+    
+    <a href="/eventDelete/{{_id}} " class="btn btn-danger">eliminar</a>
+    </tr>
+    </td>
+  {{/each}}
+  </tbody>
+</table>
